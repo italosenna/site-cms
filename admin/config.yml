@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/media"
+public_folder: "/media"
+
+collections:
+  - name: "site"
+    label: "Conteúdo do Site"
+    files:
+      - file: "site-config.json"
+        label: "Conteúdo"
+        name: "conteudo"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Texto em Destaque", name: "highlight", widget: "string" }
+          - { label: "Texto Principal", name: "headline", widget: "string" }
+          - { label: "Texto Sub", name: "subtext", widget: "text" }
+          - { label: "Link do Botão", name: "button_url", widget: "string" }
+          - { label: "Texto do Botão", name: "button_text", widget: "string" }
